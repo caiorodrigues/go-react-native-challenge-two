@@ -11,6 +11,8 @@ import {
 import Icon from 'react-native-vector-icons/FontAwesome';
 
 import styles from './styles';
+import IssueItem from './IssueItem';
+import Filter from './Filter';
 
 export default class Issues extends Component {
   state = {};
@@ -19,42 +21,12 @@ export default class Issues extends Component {
     return (
       <View style={styles.container}>
         <StatusBar barStyle="dark-content" />
-        <View style={styles.container}>
-          <TouchableOpacity onPress={() => { }}>
-            <Text>Todas</Text>
-          </TouchableOpacity>
-          <TouchableOpacity onPress={() => { }}>
-            <Text>Abertas</Text>
-          </TouchableOpacity>
-          <TouchableOpacity onPress={() => { }}>
-            <Text>Fechadas</Text>
-          </TouchableOpacity>
-        </View>
-        <TouchableOpacity onPress={() => { }}>
-          <Image source={''} />
-          <View>
-            <Text>Título</Text>
-            <Text>Usuário da issue</Text>
-          </View>
-          <Icon style={styles.icon} name="star" size={16} />
-        </TouchableOpacity>
-        <TouchableOpacity onPress={() => { }}>
-          <Image source={''} />
-          <View>
-            <Text>Título</Text>
-            <Text>Usuário da issue</Text>
-          </View>
-          <Icon style={styles.icon} name="star" size={16} />
-        </TouchableOpacity>
-        <TouchableOpacity onPress={() => { }}>
-          <Image source={''} />
-          <View>
-            <Text>Título</Text>
-            <Text>Usuário da issue</Text>
-          </View>
-          <Icon style={styles.icon} name="star" size={16} />
-        </TouchableOpacity>
+        <Filter />
+        <IssueItem />
+        <IssueItem />
+        <IssueItem />
+        <IssueItem />
       </View>
     );
-  };
+  }
 }
