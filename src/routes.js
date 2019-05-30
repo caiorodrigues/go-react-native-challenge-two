@@ -14,7 +14,7 @@ const Routes = () => createAppContainer(
       Issues,
     },
     {
-      initialRouteName: 'Repositories'
+      initialRouteName: 'Repositories',
     },
   ),
 );

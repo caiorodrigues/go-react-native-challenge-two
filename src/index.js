@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import '~/config/ReactotronConfig';
-import '~/config/DevTools.Config';
+import '~/config/DevToolsConfig';
 
 import createNavigator from './routes';
 
